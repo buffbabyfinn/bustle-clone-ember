@@ -1,0 +1,38 @@
+{{#if addNewArticle}}
+  <h4>Add New Article</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        {{input value=title id="title" placeholder=article.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author:</label>
+        {{input value=author id="author" placeholder=article.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="submitted">Submitted Date:</label>
+        {{input value=submitted id="submitted" placeholder=article.submitted}}
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category:</label>
+        {{input value=category id="category" placeholder=article.category}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Body Text:</label>
+        {{input value=body id="body" placeholder=article.body}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL:</label>
+        {{input value=image id="image" placeholder=article.image}}
+      </div>
+
+      <button type="button" class="btn btn-success" {{action 'save' article}}>Save</button>
+    </form>
+{{else}}
+  <button type="button" class="btn btn-primary" {{action 'articleFormShow'}}>New Article</button>
+{{/if}}

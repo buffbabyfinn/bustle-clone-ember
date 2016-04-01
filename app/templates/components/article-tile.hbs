@@ -1,0 +1,13 @@
+
+<div class="article-tile">
+{{#link-to 'article' article.id}}
+  <p class="article-category">{{article.category}}</p>
+  <div class="image-container">
+    <img class="article-image" src={{article.image}} alt={{article.title}}>
+  </div>
+
+  <h4 class="article-title">{{article.title}}</h4>{{/link-to}}
+  <hr>
+  <p class="article-author">{{article.author}}</p>
+  <p class="article-submitted">{{article.submitted}}</p>
+</div>

@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Admin Page</h1>
+  </div>
+</div>
+
+<div class="admin-body">
+  <div class="container">
+    {{#link-to 'index'}}<h4>Go back</h4>{{/link-to}}
+    <ul>
+      {{#each model as |article|}}
+        <li>{{article.title}} {{update-article article=article update="update"}}</li>
+      {{/each}}
+    </ul>
+
+    {{new-article  save="save"}}
+  </div>
+</div>

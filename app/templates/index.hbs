@@ -1,0 +1,17 @@
+<div class="header jumbotron">
+  <div class="container">
+    <h1>Bustle</h1>
+    {{#link-to 'about' class="about"}}About{{/link-to}}
+
+  </div>
+</div>
+
+<div class="container">
+  {{#each model as |article|}}
+    {{article-tile article=article}}
+  {{/each}}
+</div>
+
+<div class="footer">
+  {{#link-to 'admin'}}Admin{{/link-to}}
+</div>

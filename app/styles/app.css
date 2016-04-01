@@ -1,0 +1,65 @@
+.article-tile {
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin: 5px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.article-category {
+  float: left;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  font-size: 18px;
+  color: #EEE;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.article-author {
+  float: left;
+}
+
+.article-submitted {
+  float: right;
+}
+
+.image-container {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.article-image {
+
+  width: 350px;
+  z-index: 0;
+}
+
+.view-image {
+  float: right;
+}
+
+.view-body {
+  clear: both;
+  padding: 20px 150px;
+}
+
+.view-image {
+  width: 600px;
+}
+
+.about {
+  float: right;
+}
+
+a {
+  color: #555;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
